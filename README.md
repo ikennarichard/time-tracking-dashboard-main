@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [repo](https://github.com/ikennarichard/time-tracking-dashboard-main)
-- [live](https://your-live-site-url.com)
+- [live](https://ikennarichard.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
