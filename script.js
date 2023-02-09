@@ -109,10 +109,12 @@ const timeFrames = document.querySelectorAll('.time_of_report > small');
 
 const current = [...document.querySelectorAll('.bg .duration > p')];
 
-const previous = [...document.querySelectorAll('.bg .previous')];
+const previous = [...document.querySelectorAll('.previous')];
 
 
+const previousText = [...document.querySelectorAll('.previous_text')];
 
+const dots = [...document.querySelectorAll('.dots')];
 
 
 function setTimeFrames() {
@@ -137,19 +139,20 @@ function setValues(e) {
         if (e.target.innerText == "Daily") {
             current[i].innerText = data[i].timeframes.daily.current + 'hrs'
             previous[i].innerText = data[i].timeframes.daily.previous + 'hrs'
+            previousText[i].innerText = 'Yesterday'
         }  else if (e.target.innerText == "Weekly") {
           current[i].innerText = data[i].timeframes.weekly.current + 'hrs'
           previous[i].innerText = data[i].timeframes.weekly.previous + 'hrs'   
+          previousText[i].innerText = 'Last Week'
       }
         
         else if (e.target.innerText == "Monthly") {
             current[i].innerText = data[i].timeframes.monthly.current + 'hrs'
-            previous[i].innerText = data[i].timeframes.monthly.previous + 'hrs'   
+            previous[i].innerText = data[i].timeframes.monthly.previous + 'hrs' 
+            previousText[i].innerText = 'Last Month'  
         }
     }
 }
-
-setValues()
 
 
 

@@ -218,15 +218,9 @@ main {
 }
 
 
-.lastweek > small {
-    font-size: .7rem;
-}
-
-
-.lastweek > span {
+.dots > span {
     display: flex;
     gap: 2px;
-    justify-content: flex-end;
 }
 
 
@@ -236,6 +230,7 @@ i {
     height: 3px;
     border-radius: 50%;
     background-color: var(--pale-blue);
+    cursor: pointer;
 }
 
 @media (min-width:30em) {
