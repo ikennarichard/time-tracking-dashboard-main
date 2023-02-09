@@ -49,5 +49,5 @@ Users should be able to:
 ## Author
 
 - Website - [ikennarichard](https://www.github.com/ikennarichard)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ikennarichard)
-- Twitter - [@yourusername](https://www.twitter.com/ikennarichard_)
+- Frontend Mentor - [@ikennarichard](https://www.frontendmentor.io/profile/ikennarichard)
+- Twitter - [@ikennarichard](https://www.twitter.com/ikennarichard_)
