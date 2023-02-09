@@ -31,6 +31,7 @@ body {
     place-items: center;
     min-height: 100vh;
     font-family: 'Rubik', sans-serif;
+    background-color: var(--very-dark-blue);
 }
 
 
@@ -55,12 +56,10 @@ h2 {
 
 
 main {
-    background-color: var(--very-dark-blue);
     padding: 30px 20px;
     display: grid;
-    gap: 20px;
-    min-width: 270px;
-    width: 100%;
+    gap: 15px;
+    min-width: 300px;
 }
 
 .user {
@@ -169,6 +168,21 @@ main {
 }
 
 
+.details:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+
+.selected {
+    color: var(--white);
+}
+
+
+.time_of_report > small:hover {
+    color: var(--white);
+}
+
 .time {
     display: flex;
     justify-content: space-between;
@@ -251,8 +265,12 @@ i {
         grid-template-areas:
         "user work play study"
         "user exercise social self-care";
-        max-width: 1000px;
-        padding: 6em;
+        max-width: none;
+        width: 730px;
+    }
+
+    .bg {
+        width: 170px;
     }
 
     .user {
@@ -269,6 +287,12 @@ i {
         place-content: initial;
         gap: 10px;
 
+    }
+
+
+    .duration {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 

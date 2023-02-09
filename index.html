@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
+  <script src="script.js" defer></script>
   <title>Time tracking dashboard</title>
+</head>
+  <body>
   <main>
     <section class="user">
       <div class="user_details">
@@ -20,7 +23,7 @@
 
       <div class="time_of_report">
         <small>Daily</small>
-        <small>Weekly</small>
+        <small class="selected">Weekly</small>
         <small>Monthly</small>
       </div>
      
@@ -42,7 +45,7 @@
 
         <div  class="duration">
         <p>32hrs</p>
-        <small>Last Week - 36hrs</small>
+        <small>Last Week - <span class="previous">36hrs</span></small>
         </div>
         
       </div>
@@ -64,7 +67,7 @@
 
         <div class="duration">
           <p>10hrs</p>
-          <small>Last Week - 8hrs</small>
+          <small>Last Week - <span class="previous">8hrs</span></small>
         </div>
       </div>
     </section>
@@ -85,7 +88,7 @@
 
         <div class="duration">
           <p>4hrs</p>
-          <small>Last Week - 7hrs</small>
+          <small>Last Week - <span class="previous">7hrs</span></small>
         </div>
       </div>
     </section>
@@ -105,7 +108,7 @@
         </div>
         <div class="duration">
           <p>4hrs</p>
-        <small>Last Week - 5hrs</small>
+        <small>Last Week - <span class="previous">5hrs</span></small>
         </div>
       </div>
     </section>
@@ -128,7 +131,7 @@
 
         <div class="duration">
           <p>5hrs</p>
-          <small>Last Week - 10hrs</small>
+          <small>Last Week - <span class="previous">10hrs</span></small>
         </div>
       </div>
     </section>
@@ -148,13 +151,11 @@
         </div>
         <div class="duration">
           <p>2hrs</p>
-          <small>Last Week - 2hrs</small>
+          <small>Last Week - <span class="previous">2hrs</span></small>
         </div>
       </div>
     </section>
   </main>
-</head>
-<body>
 </body>
 </html>
 
